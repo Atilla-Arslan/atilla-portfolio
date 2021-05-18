@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css';
+
+body {
+  background: linear-gradient(45deg, #e513f0, #117bfc);
+  background-size: 400% 400%;
+  animation: GradientBackground 10s ease infinite;
+  color: white;
+  text-align: center;
+  font-family: Nunito, sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: Inter;
+}
+
+p {
+  font-family: Nunito, sans-serif;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#header {
+  position: fixed;
+  padding: 2rem;
+  height: 70px;
+  display: block;
+  width: 100%;
+
+  z-index: 9;
+}
+#header {
+  top: 0px;
+}
+
+#header ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#header li {
+  margin-left: 2rem;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+li:hover {
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  color: white;
+}
+
+.line-1 {
+  width: 14em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.dotstyle {
+  background: white;
+  color: white;
+}
+
+#fp-nav ul li a span {
+  background: rgb(255, 255, 255);
+  color: white;
+}
+
+.logo-boxes {
+  margin-top: 5rem;
+}
+
+.logos {
+  display: flex;
+
+  justify-content: center;
+}
+.logo-boxes p {
+  font-size: 1em;
+  margin-left: 2rem;
+}
+
+.contact {
+  margin-right: 2rem;
+}
+
+i {
+  margin-left: 2rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-cell {
+  width: 66%;
+
+  padding-top: 1rem;
+  margin: 0 auto;
+  height: 80vh;
+  background-size: cover;
+}
+
+.gallery-cell img {
+  object-fit: cover;
+  transform: scale(0.95);
+  height: 90%;
+}
+
+.gallery {
+  width: 80%;
+
+  margin: 0 auto;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+.links div {
+  text-align: center;
+  padding-right: 1.8rem;
+  padding-bottom: 0.4rem;
+  transition: 1s all ease;
+}
+
+.links div:hover {
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  color: white;
+}
+
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 0.5;
+  background: white;
+  /* background: transparent;
+  border: 2px solid white; */
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 0.5s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 14em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes GradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  h1 {
+    font-size: 1.6em;
+  }
+  .logos {
+    flex-direction: column;
+
+    text-align: center;
+    /* padding-left: 2.7rem; */
+  }
+  .contact div {
+    margin-top: 2rem;
+  }
+
+  .techlogos {
+    padding-left: 2.7rem;
+  }
+  .logo-boxes {
+    margin-top: 2rem;
+  }
+
+  .logo-boxes div {
+    margin-top: 0.4rem;
+  }
+
+  .logo-boxes p {
+    margin-top: -1.7rem;
+  }
+
+  .gallery-cell i {
+    display: none;
+  }
+
+  .gallery-cell div {
+    padding-left: 2rem;
+  }
+  #header ul {
+    justify-content: center;
+  }
+}
