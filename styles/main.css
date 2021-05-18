@@ -114,13 +114,17 @@ i {
 .gallery-cell img {
   object-fit: cover;
   transform: scale(0.95);
-  height: 90%;
+  height: 70%;
 }
 
 .gallery {
   width: 80%;
 
   margin: 0 auto;
+}
+
+.gallery-cell p {
+  width: 80%;
 }
 
 .links {
