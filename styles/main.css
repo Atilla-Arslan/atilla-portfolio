@@ -114,7 +114,7 @@ i {
 .gallery-cell img {
   object-fit: cover;
   transform: scale(0.95);
-  height: 70%;
+  height: 65%;
 }
 
 .gallery {
