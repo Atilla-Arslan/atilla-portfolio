@@ -9,6 +9,9 @@ body {
   text-align: center;
   font-family: Nunito, sans-serif;
 }
+b {
+  font-family: Nunito, sans-serif;
+}
 
 h1 {
   font-size: 3em;
@@ -96,10 +99,15 @@ li:hover {
 }
 
 i {
-  margin-left: 2rem;
+  /* margin-right: 2rem; */
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+.techlogos i,
+.contact i,
+.links i {
+  margin-left: 2rem;
 }
 
 .gallery-cell {
@@ -142,6 +150,10 @@ i {
   border-bottom: 1px solid white;
   cursor: pointer;
   color: white;
+}
+
+.film:hover {
+  border-bottom: 1px solid white;
 }
 
 /* white circles */
@@ -194,10 +206,15 @@ i {
   }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 800px) {
   h1 {
-    font-size: 1.6em;
+    font-size: 1.3em;
   }
+
+  #header {
+    display: none;
+  }
+
   .logos {
     flex-direction: column;
 
